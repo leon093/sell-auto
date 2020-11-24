@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Parallax} from "react-parallax";
-import BannerBg from "../images/banner.webp"
-import {Buttons} from "./common/Buttons";
+import BannerBg from "../../images/banner.webp"
+import {Buttons} from "../common/Buttons";
 import {motion} from "framer-motion";
 
 export const Banner = (props) => {

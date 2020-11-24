@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import Pic1 from "../images/buy-1.webp"
-import Pic2 from "../images/buy-2.webp"
-import Pic3 from "../images/buy-3.webp"
+import Pic1 from "../../images/buy-1.webp"
+import Pic2 from "../../images/buy-2.webp"
+import Pic3 from "../../images/buy-3.webp"
 
 
 export const BuyingCarSection = (props) => {

@@ -1,6 +1,6 @@
 import React from "react";
-import WhatsappImg from "../images/whatsapp.webp"
-import {Buttons} from "./common/Buttons";
+import WhatsappImg from "../../images/whatsapp.webp"
+import {Buttons} from "../common/Buttons";
 
 
 export const WhatsappSection = (props) => {

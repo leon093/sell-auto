@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+*/.idea/tasks.xml
+*/.idea/workspace.xml
 /.pnp
 .pnp.js
 

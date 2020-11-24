@@ -1,14 +1,14 @@
 import React, {useRef, useEffect} from "react";
 import {BrowserRouter} from "react-router-dom";
-import {Banner} from "./components/Banner";
+import {Banner} from "./components/sections/Banner";
 
 import './scss/app.scss';
-import {WhatsappSection} from "./components/WhatsappSection";
-import {BuyingCarSection} from "./components/BuyingCarSection";
-import {SaleProcess} from "./components/SaleProcess";
-import {BoughtCar} from "./components/BoughtCar";
-import {Faq} from "./components/Faq";
-import {Contacts} from "./components/Contacts";
+import {WhatsappSection} from "./components/sections/WhatsappSection";
+import {BuyingCarSection} from "./components/sections/BuyingCarSection";
+import {SaleProcess} from "./components/sections/SaleProcess";
+import {BoughtCar} from "./components/sections/BoughtCar";
+import {Faq} from "./components/sections/Faq";
+import {Contacts} from "./components/sections/Contacts";
 import {PopupOrder} from "./components/popups/PopupOrder";
 import Emitter from "./components/common/EventEmitter";
 

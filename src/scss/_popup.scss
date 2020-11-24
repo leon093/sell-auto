@@ -48,3 +48,12 @@
         filter: invert(1);
     }
 }
+
+.popup-order {
+    &__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+}

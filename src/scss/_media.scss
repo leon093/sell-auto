@@ -138,9 +138,22 @@
             flex-direction: column;
         }
     }
-
+    
+    .banner-cont-wrap {
+        height: calc(100% - 308px);
+        min-height: auto;
+        
+        .container {
+            height: 100%;
+        }
+    }
+    
+    .react-parallax-content {
+        min-height: auto;
+    }
+    
     .banner-cont {
-        height: calc(100% - 298px);
+        height: 100%;
     }
 
     .banner-list {
@@ -195,7 +208,7 @@
     }
 
     .page-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .banner-btns {
@@ -251,16 +264,6 @@
     .sale-item {
         min-height: 300px;
     }
-
-    .popup {
-        &__wrap {
-            max-width: 100%;
-        }
-    }
-    
-    .loading {
-        width: 100%;
-    }
     
     .contacts-status {
         text-align: center;
@@ -269,5 +272,25 @@
     .close-icon {
         width: 25px;
         height: 25px;
+    }
+    
+    .car {
+        &__img {
+            height: 220px;
+        }
+    }
+    
+    .popup {
+        &__wrap {
+            max-width: 100%;
+            padding: 75px 45px;
+        }
+    }
+    
+    .popup-order {
+        &__cont {
+            display: block;
+            height: auto;
+        }
     }
 }

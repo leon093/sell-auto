@@ -1,5 +1,5 @@
 import React from "react";
-import {ContactForm} from "./contacts/ContactsForm";
+import {ContactForm} from "../contacts/ContactsForm";
 
 export const Contacts = (props) => {
     return (

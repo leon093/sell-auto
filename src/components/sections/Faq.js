@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {FaqItem} from "./faq/FaqItem";
+import {FaqItem} from "../faq/FaqItem";
 
 export const Faq = (props) => {
     const [faqItems, setFaqItems] = useState([

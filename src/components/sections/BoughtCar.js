@@ -1,11 +1,11 @@
 import React, {useState, useRef} from "react";
-import {Carousel} from "./common/Carousel";
-import Auto1 from "../images/auto-1.webp";
-import Auto2 from "../images/auto-2.webp";
-import Auto3 from "../images/auto-3.webp";
-import Auto4 from "../images/auto-4.webp";
-import Auto5 from "../images/auto-5.webp";
-import Auto6 from "../images/auto-6.webp";
+import {Carousel} from "../common/Carousel";
+import Auto1 from "../../images/auto-1.webp";
+import Auto2 from "../../images/auto-2.webp";
+import Auto3 from "../../images/auto-3.webp";
+import Auto4 from "../../images/auto-4.webp";
+import Auto5 from "../../images/auto-5.webp";
+import Auto6 from "../../images/auto-6.webp";
 
 export const BoughtCar = (props) => {
     let flkty = useRef(null);

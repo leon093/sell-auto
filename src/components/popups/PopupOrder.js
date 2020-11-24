@@ -3,13 +3,16 @@ import {Popup} from "../common/Popup";
 import {ContactForm} from "../contacts/ContactsForm";
 
 export const PopupOrder = (props) => {
-    return(
+    return (
         <Popup classPopup="popup-order" ref={props.refPopup}>
-            <h2 className="page-title">
-                Заявка на оценку
-            </h2>
 
-            <ContactForm />
+            <div className="popup-order__cont">
+                <h2 className="page-title">
+                    Заявка на оценку
+                </h2>
+
+                <ContactForm/>
+            </div>
         </Popup>
     )
 }

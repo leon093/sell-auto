@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Buttons} from "./common/Buttons";
+import {Buttons} from "../common/Buttons";
 
 export const SaleProcess = (props) => {
     const [saleProcessItems, setSaleProcessItems] = useState([

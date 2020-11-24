@@ -92,15 +92,6 @@ export const ContactForm = () => {
                 </div>
 
                 <div className="contacts-form__item">
-                    {/*<input
-                        name="year"
-                        className="inp"
-                        type="number"
-                        value={year}
-                        onChange={(e) => setYear(e.target.value)}
-                        placeholder="Год выпуска"
-                    />*/}
-
                     <InputMask
                         type="tel"
                         onChange={(e) => setYear(e.target.value)}
@@ -124,15 +115,17 @@ export const ContactForm = () => {
                 </div>
 
                 <div className="contacts-form__item">
-                    <input
-                        name="file[]"
-                        id="myfile"
-                        type="file"
-                        ref={(el) => {
-                            fileRef = el
-                        }}
-                        onChange={handleUpload}
-                    />
+
+                    <label className="custom-file-upload">
+                        <input
+                            className="native-file-upload"
+                            name="file[]"
+                            id="myfile"
+                            type="file"
+                            onChange={handleUpload}
+                        />
+                        <i className="fa fa-cloud-upload" /> Выберите файл
+                    </label>
                 </div>
 
                 <div className="contacts-form__item">
@@ -152,15 +145,6 @@ export const ContactForm = () => {
                 </div>
 
                 <div className="contacts-form__item">
-                    {/*<input
-                        name="tel"
-                        className="inp"
-                        type="tel"
-                        value={tel}
-                        onChange={(e) => setTel(e.target.value)}
-                        placeholder="Телефон"
-                    />*/}
-
                     <InputMask
                         type="tel"
                         onChange={(e) => setTel(e.target.value)}
