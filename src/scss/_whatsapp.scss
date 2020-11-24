@@ -1,0 +1,24 @@
+.whatsapp-section {
+    padding-top: 50px;
+}
+
+.whatsapp-b {
+    display: flex;
+
+    &__col-1 {
+        margin-right: 30px;
+    }
+
+    &__col-2 {
+        max-width: 480px;
+    }
+}
+
+.whatsapp {
+    &__img {
+        width: 190px;
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+    }
+}

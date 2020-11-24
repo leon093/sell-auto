@@ -1,0 +1,40 @@
+.logo-icon {
+    @include mixinIcon(60px, 60px, block, racing-car);
+}
+
+.sale-1-icon {
+    @include mixinIcon(80px, 80px, block, sale-1);
+}
+
+.sale-2-icon {
+    @include mixinIcon(80px, 80px, block, sale-2);
+}
+
+.sale-3-icon {
+    @include mixinIcon(80px, 80px, block, sale-3);
+}
+
+.sale-4-icon {
+    @include mixinIcon(80px, 80px, block, sale-4);
+}
+
+.close-icon {
+    @include mixinIcon(30px, 30px, block, close);
+}
+
+.down-arrow-icon {
+    @include mixinIcon(30px, 30px, block, down-arrow);
+
+    transition: 350ms;
+
+    &--rotate {
+        transform: rotate3d(0, 0, 1, -180deg);
+    }
+}
+
+.tire-icon {
+    @include mixinIcon(40px, 40px, block, tire);
+
+    transition: 350ms linear;
+}
+

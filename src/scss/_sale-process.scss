@@ -1,0 +1,55 @@
+.sale-list {
+    display: flex;
+    margin-top: 70px;
+
+    &__item {
+        width: calc(100% / 4);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.sale-item {
+    position: relative;
+    min-height: 310px;
+    padding: 55px 20px 20px 20px;
+    border: 1px solid $brColor;
+    border-radius: 15px;
+
+    &__title {
+        @include mixinTitleBold(23px);
+
+        margin: 0 0 12px;
+        line-height: 1;
+    }
+
+    &__desc {
+        font-size: 18px;
+    }
+
+    &__num {
+        @include mixinFlexCenter();
+        @include mixinTitleBold(23px, $brandColor);
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        top: -40px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 1px solid $brColor;
+        background: $lightColor;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+    }
+}

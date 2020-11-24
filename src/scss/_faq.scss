@@ -1,0 +1,39 @@
+.faq-section {
+    padding-bottom: 50px;
+}
+
+.faq-list {
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 2px dashed #ccc;
+        }
+    }
+}
+
+.faq-item {
+    padding: 10px 0;
+    cursor: pointer;
+
+    &__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 350ms;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__title {
+        @include mixinTitleBold(24px);
+
+        margin: 0;
+    }
+
+    &__answer {
+        max-width: 50%;
+        margin-top: 10px;
+        color: #666;
+    }
+}

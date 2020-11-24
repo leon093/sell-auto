@@ -1,0 +1,9 @@
+$fontProximaB: 'Proxima Nova Bold';
+$fontProximaR: 'Proxima Nova Regular';
+$fontProximaSB: 'Proxima Nova SemiBold';
+$fontProximaEB: 'Proxima Nova ExtraBold';
+
+@include mixinFontFace($fontProximaB, "#{$fontPath}/ProximaNova-Bold", null, normal, eot woff ttf);
+@include mixinFontFace($fontProximaR, "#{$fontPath}/ProximaNova-Regular", null, normal, eot woff ttf);
+@include mixinFontFace($fontProximaSB, "#{$fontPath}/ProximaNova-Semibold", null, normal, eot woff ttf);
+@include mixinFontFace($fontProximaEB, "#{$fontPath}/ProximaNova-Extrabld", null, normal, eot woff ttf);

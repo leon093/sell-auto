@@ -1,0 +1,73 @@
+@mixin mixinScrollbar($size: 6px, $trackBg: transparent, $thumbBg: #ccc, $thumbBgHover: #999, $thumbRadius: 4px) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $trackBg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $thumbBg;
+        border-radius: $thumbRadius;
+        transition: background 350ms;
+
+        &:hover {
+            background: $thumbBgHover;
+        }
+    }
+}
+
+@mixin mixinFontFace($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (
+            eot: "?",
+            svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+            otf: "opentype",
+            ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+        font-display: swap;
+    }
+}
+
+@mixin mixinTitleBold($fontSize: 14px, $color: $darkColor) {
+    font-size: $fontSize;
+    font-weight: bold;
+    font-family: $fontProximaB;
+    color: $color;
+}
+
+@mixin mixinIcon($width, $height, $display, $name, $pngIcon: false) {
+    width: $width;
+    height: $height;
+    display: $display;
+
+    @if $pngIcon {
+        background: url('#{$imgPath}/#{$name}.png') no-repeat;
+    } @else {
+        background: url('#{$imgPath}/#{$name}.svg') no-repeat;
+    }
+}
+
+@mixin mixinFlexCenter($value: center, $display: flex) {
+    display: $display;
+    align-items: $value;
+    justify-content: $value;
+}
